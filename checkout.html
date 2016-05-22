@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Sedekahpedia - #SedekahMudah</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+	<div class="row" style="margin-top:50px;">
+        <div class="col s12 m4 offset-m4">
+        	<div class="center" style="margin-bottom:40px;">
+        		<p class="grey-text" style="font-size:14px;font-weight:400;">Silahkan transfer sejumlah </p>
+        		<h4 class="grey-text text-darken-4 light">Rp 
+        		123        		</h4>
+        		<p class="grey-text" style="font-size:14px;font-weight:400;">Sisa waktu <span class="blue-text text-acccent-4"><span id="countdown"></span></span></p>
+        	</div>
+
+        	<h5 class="center grey-text text-darken-4">Silahkan transfer dana melalui channel berikut</h5>
+
+			<ul class="collapsible" data-collapsible="accordion" style="margin-top:20px;">
+			<li>
+			  <div class="collapsible-header"><i class="material-icons">filter_drama</i>BCA</div>
+			  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+			</li>
+			<li>
+			  <div class="collapsible-header"><i class="material-icons">place</i>XL Tunai</div>
+			  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+			</li>
+			<li>
+			  <div class="collapsible-header"><i class="material-icons">whatshot</i>Mandiri</div>
+			  <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+			</li>
+			</ul>
+
+			<div class="center" style="margin:40px 0 40px;;">
+				<a href="index.php" class="waves-effect waves-light btn grey ">Batal</a>
+	            		<a class="waves-effect waves-light btn blue accent-4 modal-trigger" href="#modal1">Sudah Transfer</a>
+	            		<div id="modal1" class="modal">
+				    <div class="modal-content center">
+				      <img class="responsive-img" src="img/check.png" style="height:80px;margin-bottom:50px">
+				      <h3>Terima Kasih</h3><br>
+				      <p>Donasi anda sedang kami proses.<br>Mohon menunggu balasan SMS dari kami, maximal 1x24 jam.</p>
+				    </div>
+				    <div class="modal-footer">
+				      <a href="index.php" class=" modal-action modal-close waves-effect waves-green btn-flat">Kembali ke awal</a>
+				    </div>
+				 </div>
+	        	</div>
+        </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    function countdown( elementName, minutes, seconds )
+	{
+	    var element, endTime, hours, mins, msLeft, time;
+	
+	    function twoDigits( n )
+	    {
+	        return (n <= 9 ? "0" + n : n);
+	    }
+	
+	    function updateTimer()
+	    {
+	        msLeft = endTime - (+new Date);
+	        if ( msLeft < 1000 ) {
+	            element.innerHTML = "countdown's over!";
+	        } else {
+	            time = new Date( msLeft );
+	            hours = time.getUTCHours();
+	            mins = time.getUTCMinutes();
+	            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+	            setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+	        }
+	    }
+	
+	    element = document.getElementById( elementName );
+	    endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+	    updateTimer();
+	}
+	
+	countdown( "countdown", 30, 0 );
+  </script>
+  <script>
+	  $(document).ready(function(){
+	    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+	    $('.modal-trigger').leanModal();
+	  });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Sedekahpedia - #SedekahMudah</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+  <div class="row">
+
+        <div class="col s12 m4 offset-m4">
+           <div class="card">    
+          
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/book.jpg">
+                <div class="blue accent-4" style="left:20px;top:20px;padding:0 10px 0 10px;position:absolute;">
+                  <span class="white-text" style="font-size:12px"> Infaq </span>
+                </div>
+              </div>
+              
+              <div class="card-content blue accent-3 center-align">
+                <p class="white-text light" style="font-size:12px;line-height:20px;">Sedekah untuk : </p>
+                <span class="card-title white-text" style="font-size:20px;font-weight:400;">Go-Gift Books</span>
+              </div>
+              
+              <div class="card-action">
+
+                  <form name="form" id ="form" action="checkout-bca.html" method="POST" enctype="multipart/form-data">
+                    <div style="margin:20px 0 40px 0;">
+                      <p class="center-align">Silahkan isi data berikut :</p><br>
+                      <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input name="name" type="text" class="validate">
+                        <label for="name">Nama Lengkap</label>                  
+                      </div>
+                      <div class="input-field">
+                        <i class="material-icons prefix">phone</i>
+                        <input name="hp" type="tel" class="validate">
+                        <label for="hp">No. HP</label>                  
+                      </div>
+                      
+                      <div class="input-field">
+                        <i class="material-icons prefix">monetization_on</i>
+                        <input name="value" type="number" min="5000" class="validate">
+                        <label for="value">Jumlah Sedekah (minimal Rp 5.000)</label>
+
+                      </div>
+
+                      <div class="input-field">
+                        <i class="material-icons prefix">payment</i>
+                        <select>
+                          <option value="" disabled selected>Pilih Metode Pembayaran Donasi</option>
+                          <option value="1">Transfer Bank</option>
+                          <option value="2">Potong Pulsa</option>
+                          <option value="3">XL Tunai</option>
+                        </select>
+              
+                      </div>
+
+                    </div>
+
+                    <div class="center" style="margin-bottom:40px;">
+                        <button class="btn-large waves-effect waves-light blue accent-4" name ="submit" type="submit" value="submit" >Selanjutnya 
+                        </button>
+                    </div>
+                  </form>
+
+              </div>
+
+
+            </div>
+        </div>
+
+      </div>
+  
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+</body>
+
+</html>
