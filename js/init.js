@@ -7,6 +7,11 @@
     $('.tooltipped').tooltip({delay: 50});
     $('ul.tabs').tabs();
     $('.slider').slider({indicators: false});
+    $('input#judul, textarea#deskripsi').characterCounter();
+    $('.datepicker').pickadate({
+    	selectMonths: true, 
+    	selectYears: 15 
+  	});
 
 
   }); // end of document ready

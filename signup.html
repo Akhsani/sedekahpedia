@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Sedekahpedia - #SedekahMudah</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper white" style="padding:0 40px 0 40px">
+          <a href="#" class="brand-logo blue-text text-accent-3"><img src="img/logo.png" style="height:40px;margin-top:12px"></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Program</a></li>
+            <li><a href="index.html">Tentang Sedekahpedia</a></li>
+            <li><a href="#kontak" class="waves-effect waves-light btn blue accent-3">Kontak</a></li>
+          </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container" style="padding-top:40px">
+        <br><br>
+        <h4 class="header white-text">Ayo Galang Dana dengan Sedekahpedia !</h4>
+        <div class="row">
+          <h5 class="header col s8 light">Sedekahpedia merupakan platform yang mempertemukan umat yang membutuhkan dana dengan umat yang ingin bersedekah.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/bg.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="section grey lighten-5">
+    <div class="container">
+     <p>Silahkan isi form berikut untuk mendaftarkan program/kegiatan :</p>
+      <form>
+
+        <!-- Personal Information -->
+        <div class="row">
+        <div class="col s12 m8">
+          <div class="card">
+              <div class="card-content">
+                <span class="card-title">1. Informasi Personal<br></span>
+                <div class="row">
+
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="nama" type="text" class="validate">
+                    <label for="nama">Nama Lengkap</label>
+                  </div>
+
+                  <div class="input-field col s12 m6">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="phone" type="tel" class="validate">
+                    <label for="phone">No. Hp</label>
+                  </div>
+
+                  <div class="input-field col s12 m6">
+                    <i class="material-icons prefix">mail</i>
+                    <input id="mail" type="email" class="validate">
+                    <label for="mail">email</label>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+        </div>  
+        </div>
+        <!-- Personal Information End -->
+
+        <!-- Program -->
+        <div class="row">
+        <div class="col s12 m8">
+          <div class="card">
+              <div class="card-content">
+                <span class="card-title">2. Program/Kegiatan<br></span>
+                <div class="row">
+
+                  <div class="input-field col s12 m8">
+                    <i class="material-icons prefix">create</i>
+                    <input id="judul" type="text" length="50">
+                    <label for="judul">Judul</label>
+                  </div>
+                  
+                  <div class="input-field col s12 m4">
+                    <select>
+                      <option value="" disabled selected>Pilih Kategori</option>
+                      <option value="1">Infaq</option>
+                      <option value="2">Infrastruktur</option>
+                      <option value="3">Yatim Piatu</option>
+                      <option value="4">Jihad</option>
+                    </select>
+                    <label>Kategori Program/Kegiatan</label>
+                  </div>
+
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">create</i>
+                    <textarea id="deskripsi" class="materialize-textarea" length="200"></textarea>
+                    <label for="deskripsi">Deskripsi</label>
+                  </div>
+
+                  <div class="col s8 file-field input-field">
+                    <div class="btn blue accent-3">
+                      <span>Gambar</span>
+                      <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input class="file-path validate" type="text" placeholder="Unggah satu file gambar">
+                    </div>
+                  </div>
+       
+                </div>
+
+              </div>
+            </div>
+        </div>  
+        </div>
+        <!-- Program End -->
+
+        <!-- Target -->
+        <div class="row">
+        <div class="col s12 m8">
+          <div class="card">
+              <div class="card-content">
+                <span class="card-title">3. Target<br></span>
+                <div class="row">
+
+                  <div class="input-field col s12 m6">
+                    <i class="prefix">Rp</i>
+                    <input id="dana" type="text" class="validate">
+                    <label for="dana">Dana</label>
+                  </div>
+
+                  <div class="input-field col s12 m6">
+                    <i class="material-icons prefix text-black">today</i>
+                    <input type="date" class="datepicker" placeholder="Batas waktu">
+
+                  </div>
+
+                </div>
+              </div>
+              <div class="card-action center-align grey lighten-5">
+                <p style="margin:20px 0 40px 0">
+                  <input type="checkbox" class="filled-in" id="syarat">
+                  <label for="syarat" style="vertical-align:bottom"></label> <span>Saya setuju dengan syarat dan ketentuan yang berlaku</span>
+                </p>
+                <button class="btn-large waves-effect waves-light blue accent-3" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>                
+              </div>
+            </div>
+        </div>  
+        </div>
+        <!-- Target End -->
+
+      </form>
+    </div>
+  </div>
+
+
+  <footer class="page-footer blue accent-4" id="kontak">
+    <div class="container center white-text">
+
+    <p class="thin">Layanan <strong>Sedekahpedia</strong> merupakan inisiatif dari MTXL.
+    <br>Untuk informasi lebih lanjut silahkan menghubungi :</p>
+    <p class="thin"> <i class="material-icons tiny">call</i>  /  <i class="material-icons tiny">comment</i><br>0818 0702 1318 (Ubed)</p>
+
+    </div>
+    <div class="footer-copyright">
+      <div class="container center-align">
+      Made by <strong>MTXL</strong>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
