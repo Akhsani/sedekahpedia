@@ -12,7 +12,6 @@
     	selectMonths: true, 
     	selectYears: 15 
   	});
-
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+  	$(".button-collapse").sideNav();
+  }); 
+})(jQuery);
