@@ -20,8 +20,8 @@
         <div class="col s12 m4 offset-m4">
            <div class="card">    
           
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="img/book.jpg">
+              <div class="card-image">
+                <img src="img/book.jpg">
                 <div class="blue accent-4" style="left:20px;top:20px;padding:0 10px 0 10px;position:absolute;">
                   <span class="white-text" style="font-size:12px"> Infaq </span>
                 </div>
@@ -50,15 +50,15 @@
                       
                       <div class="input-field">
                         <i class="material-icons prefix">monetization_on</i>
-                        <input name="value" type="number" min="5000" class="validate">
-                        <label for="value">Jumlah Sedekah (minimal Rp 5.000)</label>
+                        <input name="value" type="number" min="5000" step="1000" class="validate">
+                        <label for="value">Jumlah Sedekah (min. Rp 5.000)</label>
 
                       </div>
 
                       <div class="input-field">
                         <i class="material-icons prefix">payment</i>
                         <select>
-                          <option value="" disabled selected>Pilih Metode Pembayaran Donasi</option>
+                          <option value="" disabled selected>Metode Pembayaran</option>
                           <option value="1">Transfer Bank</option>
                           <option value="2">Potong Pulsa</option>
                           <option value="3">XL Tunai</option>
